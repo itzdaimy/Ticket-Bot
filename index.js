@@ -9,6 +9,11 @@ if (process.version.slice(1).split(".")[0] < 16) {
     process.exit(1);
 }
 
+/**
+ * The Discord client instance
+ * @typedef {Bot} Bot
+ * @extends {Client}
+ */
 class Bot extends Client {
     constructor() {
         super({
